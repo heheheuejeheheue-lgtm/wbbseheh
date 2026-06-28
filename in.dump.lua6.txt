@@ -1,0 +1,5991 @@
+VideoPlayer.IgnoreGuiInset = true;
+VideoPlayer.DisplayOrder = 999;
+VideoPlayer.Name = "VideoPlayer";
+local Frame = Instance.new"Frame";
+local UDim2_New = UDim2.new;
+Frame.Size = UDim2_New(0.4, 0, 0.035, 0);
+Frame.Position = UDim2_New(0.3, 0, 0.9, 0);
+local Color3_New = Color3.new;
+Frame.BackgroundColor3 = Color3_New(0, 0, 0);
+Frame.Parent = VideoPlayer;
+local Frame_2 = Instance.new"Frame";
+Frame_2.Size = UDim2_New(0, 0, 1, 0);
+Frame_2.BackgroundColor3 = Color3_New(0, 0, 0);
+Frame_2.Parent = Frame;
+local Starlight_Hub_Is_Loading = Instance.new"TextLabel";
+Starlight_Hub_Is_Loading.Size = UDim2_New(1, 0, 1, 0);
+Starlight_Hub_Is_Loading.BackgroundTransparency = 1;
+Starlight_Hub_Is_Loading.Font = Enum.Font.Gotham;
+Starlight_Hub_Is_Loading.TextColor3 = Color3_New(1, 1, 1);
+Starlight_Hub_Is_Loading.TextScaled = true;
+Starlight_Hub_Is_Loading.Text = "Starlight Hub is Loading";
+Starlight_Hub_Is_Loading.Parent = Frame;
+task.spawn(function()
+    if not isfile"v_audio.wav" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_1, Pcall_Result = pcall(function(p1_3, a_3, b_3, c_3)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/audio.wav");
+        end);
+    end;
+    if success_1 then 
+        if Pcall_Result then 
+
+        end;
+    end;
+    if #Pcall_Result > 500 then 
+
+    end;
+    if Pcall_Result then 
+        writefile("v_audio.wav", Pcall_Result);
+        fenv.getcustomasset"v_audio.wav";
+    end;
+    task.wait();
+    Frame_2.Size = UDim2_New(0.0136986301369863, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 1/73";
+end);
+task.spawn(function()
+    if not isfile"f_0.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_51, Pcall_Result_2 = pcall(function(p1_103, a_103, b_103, c_103)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_0.jpg");
+        end);
+    end;
+    if success_51 then 
+        if Pcall_Result_2 then 
+
+        end;
+    end;
+    if #Pcall_Result_2 > 500 then 
+
+    end;
+    if Pcall_Result_2 then 
+        writefile("f_0.jpg", Pcall_Result_2);
+    end;
+    task.wait();
+    Frame_0 = Instance.new"ImageLabel";
+    Frame_0.Name = "Frame_0";
+    Frame_0.Size = UDim2_New(1, 0, 1, 0);
+    Frame_0.BackgroundTransparency = 1;
+    Frame_0.Image = fenv.getcustomasset"f_0.jpg";
+    Frame_0.ScaleType = Enum.ScaleType.Stretch;
+    Frame_0.ZIndex = 100;
+    Frame_0.Visible = false;
+    Frame_0.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6986301369863014, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 51/73";
+end);
+task.spawn(function()
+    if not isfile"f_1.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_50, Pcall_Result_3 = pcall(function(p1_101, a_101, b_101, c_101)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_1.jpg");
+        end);
+    end;
+    if success_50 then 
+        if Pcall_Result_3 then 
+
+        end;
+    end;
+    if #Pcall_Result_3 > 500 then 
+
+    end;
+    if Pcall_Result_3 then 
+        writefile("f_1.jpg", Pcall_Result_3);
+    end;
+    task.wait();
+    Frame_1 = Instance.new"ImageLabel";
+    Frame_1.Name = "Frame_1";
+    Frame_1.Size = UDim2_New(1, 0, 1, 0);
+    Frame_1.BackgroundTransparency = 1;
+    Frame_1.Image = fenv.getcustomasset"f_1.jpg";
+    Frame_1.ScaleType = Enum.ScaleType.Stretch;
+    Frame_1.ZIndex = 100;
+    Frame_1.Visible = false;
+    Frame_1.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.684931506849315, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 50/73";
+end);
+task.spawn(function()
+    if not isfile"f_2.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_53, Pcall_Result_4 = pcall(function(p1_107, a_107, b_107, c_107)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_2.jpg");
+        end);
+    end;
+    if success_53 then 
+        if Pcall_Result_4 then 
+
+        end;
+    end;
+    if #Pcall_Result_4 > 500 then 
+
+    end;
+    if Pcall_Result_4 then 
+        writefile("f_2.jpg", Pcall_Result_4);
+    end;
+    task.wait();
+    Frame_2 = Instance.new"ImageLabel";
+    Frame_2.Name = "Frame_2";
+    Frame_2.Size = UDim2_New(1, 0, 1, 0);
+    Frame_2.BackgroundTransparency = 1;
+    Frame_2.Image = fenv.getcustomasset"f_2.jpg";
+    Frame_2.ScaleType = Enum.ScaleType.Stretch;
+    Frame_2.ZIndex = 100;
+    Frame_2.Visible = false;
+    Frame_2.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.726027397260274, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 53/73";
+end);
+task.spawn(function()
+    if not isfile"f_3.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_55, Pcall_Result_5 = pcall(function(p1_111, a_111, b_111, c_111)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_3.jpg");
+        end);
+    end;
+    if success_55 then 
+        if Pcall_Result_5 then 
+
+        end;
+    end;
+    if #Pcall_Result_5 > 500 then 
+
+    end;
+    if Pcall_Result_5 then 
+        writefile("f_3.jpg", Pcall_Result_5);
+    end;
+    task.wait();
+    Frame_3 = Instance.new"ImageLabel";
+    Frame_3.Name = "Frame_3";
+    Frame_3.Size = UDim2_New(1, 0, 1, 0);
+    Frame_3.BackgroundTransparency = 1;
+    Frame_3.Image = fenv.getcustomasset"f_3.jpg";
+    Frame_3.ScaleType = Enum.ScaleType.Stretch;
+    Frame_3.ZIndex = 100;
+    Frame_3.Visible = false;
+    Frame_3.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7534246575342466, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 55/73";
+end);
+task.spawn(function()
+    if not isfile"f_4.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_54, Pcall_Result_6 = pcall(function(p1_109, a_109, b_109, c_109)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_4.jpg");
+        end);
+    end;
+    if success_54 then 
+        if Pcall_Result_6 then 
+
+        end;
+    end;
+    if #Pcall_Result_6 > 500 then 
+
+    end;
+    if Pcall_Result_6 then 
+        writefile("f_4.jpg", Pcall_Result_6);
+    end;
+    task.wait();
+    Frame_4 = Instance.new"ImageLabel";
+    Frame_4.Name = "Frame_4";
+    Frame_4.Size = UDim2_New(1, 0, 1, 0);
+    Frame_4.BackgroundTransparency = 1;
+    Frame_4.Image = fenv.getcustomasset"f_4.jpg";
+    Frame_4.ScaleType = Enum.ScaleType.Stretch;
+    Frame_4.ZIndex = 100;
+    Frame_4.Visible = false;
+    Frame_4.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7397260273972602, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 54/73";
+end);
+task.spawn(function()
+    if not isfile"f_5.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_49, Pcall_Result_7 = pcall(function(p1_99, a_99, b_99, c_99)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_5.jpg");
+        end);
+    end;
+    if success_49 then 
+        if Pcall_Result_7 then 
+
+        end;
+    end;
+    if #Pcall_Result_7 > 500 then 
+
+    end;
+    if Pcall_Result_7 then 
+        writefile("f_5.jpg", Pcall_Result_7);
+    end;
+    task.wait();
+    Frame_5 = Instance.new"ImageLabel";
+    Frame_5.Name = "Frame_5";
+    Frame_5.Size = UDim2_New(1, 0, 1, 0);
+    Frame_5.BackgroundTransparency = 1;
+    Frame_5.Image = fenv.getcustomasset"f_5.jpg";
+    Frame_5.ScaleType = Enum.ScaleType.Stretch;
+    Frame_5.ZIndex = 100;
+    Frame_5.Visible = false;
+    Frame_5.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6712328767123288, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 49/73";
+end);
+task.spawn(function()
+    if not isfile"f_6.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_52, Pcall_Result_8 = pcall(function(p1_105, a_105, b_105, c_105)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_6.jpg");
+        end);
+    end;
+    if success_52 then 
+        if Pcall_Result_8 then 
+
+        end;
+    end;
+    if #Pcall_Result_8 > 500 then 
+
+    end;
+    if Pcall_Result_8 then 
+        writefile("f_6.jpg", Pcall_Result_8);
+    end;
+    task.wait();
+    Frame_6 = Instance.new"ImageLabel";
+    Frame_6.Name = "Frame_6";
+    Frame_6.Size = UDim2_New(1, 0, 1, 0);
+    Frame_6.BackgroundTransparency = 1;
+    Frame_6.Image = fenv.getcustomasset"f_6.jpg";
+    Frame_6.ScaleType = Enum.ScaleType.Stretch;
+    Frame_6.ZIndex = 100;
+    Frame_6.Visible = false;
+    Frame_6.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7123287671232876, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 52/73";
+end);
+task.spawn(function()
+    if not isfile"f_7.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_48, Pcall_Result_9 = pcall(function(p1_97, a_97, b_97, c_97)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_7.jpg");
+        end);
+    end;
+    if success_48 then 
+        if Pcall_Result_9 then 
+
+        end;
+    end;
+    if #Pcall_Result_9 > 500 then 
+
+    end;
+    if Pcall_Result_9 then 
+        writefile("f_7.jpg", Pcall_Result_9);
+    end;
+    task.wait();
+    Frame_7 = Instance.new"ImageLabel";
+    Frame_7.Name = "Frame_7";
+    Frame_7.Size = UDim2_New(1, 0, 1, 0);
+    Frame_7.BackgroundTransparency = 1;
+    Frame_7.Image = fenv.getcustomasset"f_7.jpg";
+    Frame_7.ScaleType = Enum.ScaleType.Stretch;
+    Frame_7.ZIndex = 100;
+    Frame_7.Visible = false;
+    Frame_7.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6575342465753424, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 48/73";
+end);
+task.spawn(function()
+    if not isfile"f_8.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_42, Pcall_Result_10 = pcall(function(p1_85, a_85, b_85, c_85)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_8.jpg");
+        end);
+    end;
+    if success_42 then 
+        if Pcall_Result_10 then 
+
+        end;
+    end;
+    if #Pcall_Result_10 > 500 then 
+
+    end;
+    if Pcall_Result_10 then 
+        writefile("f_8.jpg", Pcall_Result_10);
+    end;
+    task.wait();
+    Frame_8 = Instance.new"ImageLabel";
+    Frame_8.Name = "Frame_8";
+    Frame_8.Size = UDim2_New(1, 0, 1, 0);
+    Frame_8.BackgroundTransparency = 1;
+    Frame_8.Image = fenv.getcustomasset"f_8.jpg";
+    Frame_8.ScaleType = Enum.ScaleType.Stretch;
+    Frame_8.ZIndex = 100;
+    Frame_8.Visible = false;
+    Frame_8.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.5753424657534246, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 42/73";
+end);
+task.spawn(function()
+    if not isfile"f_9.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_41, Pcall_Result_11 = pcall(function(p1_83, a_83, b_83, c_83)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_9.jpg");
+        end);
+    end;
+    if success_41 then 
+        if Pcall_Result_11 then 
+
+        end;
+    end;
+    if #Pcall_Result_11 > 500 then 
+
+    end;
+    if Pcall_Result_11 then 
+        writefile("f_9.jpg", Pcall_Result_11);
+    end;
+    task.wait();
+    Frame_9 = Instance.new"ImageLabel";
+    Frame_9.Name = "Frame_9";
+    Frame_9.Size = UDim2_New(1, 0, 1, 0);
+    Frame_9.BackgroundTransparency = 1;
+    Frame_9.Image = fenv.getcustomasset"f_9.jpg";
+    Frame_9.ScaleType = Enum.ScaleType.Stretch;
+    Frame_9.ZIndex = 100;
+    Frame_9.Visible = false;
+    Frame_9.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.5616438356164384, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 41/73";
+end);
+task.spawn(function()
+    if not isfile"f_10.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_40, Pcall_Result_12 = pcall(function(p1_81, a_81, b_81, c_81)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_10.jpg");
+        end);
+    end;
+    if success_40 then 
+        if Pcall_Result_12 then 
+
+        end;
+    end;
+    if #Pcall_Result_12 > 500 then 
+
+    end;
+    if Pcall_Result_12 then 
+        writefile("f_10.jpg", Pcall_Result_12);
+    end;
+    task.wait();
+    Frame_10 = Instance.new"ImageLabel";
+    Frame_10.Name = "Frame_10";
+    Frame_10.Size = UDim2_New(1, 0, 1, 0);
+    Frame_10.BackgroundTransparency = 1;
+    Frame_10.Image = fenv.getcustomasset"f_10.jpg";
+    Frame_10.ScaleType = Enum.ScaleType.Stretch;
+    Frame_10.ZIndex = 100;
+    Frame_10.Visible = false;
+    Frame_10.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.547945205479452, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 40/73";
+end);
+task.spawn(function()
+    if not isfile"f_11.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_43, Pcall_Result_13 = pcall(function(p1_87, a_87, b_87, c_87)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_11.jpg");
+        end);
+    end;
+    if success_43 then 
+        if Pcall_Result_13 then 
+
+        end;
+    end;
+    if #Pcall_Result_13 > 500 then 
+
+    end;
+    if Pcall_Result_13 then 
+        writefile("f_11.jpg", Pcall_Result_13);
+    end;
+    task.wait();
+    Frame_11 = Instance.new"ImageLabel";
+    Frame_11.Name = "Frame_11";
+    Frame_11.Size = UDim2_New(1, 0, 1, 0);
+    Frame_11.BackgroundTransparency = 1;
+    Frame_11.Image = fenv.getcustomasset"f_11.jpg";
+    Frame_11.ScaleType = Enum.ScaleType.Stretch;
+    Frame_11.ZIndex = 100;
+    Frame_11.Visible = false;
+    Frame_11.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.589041095890411, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 43/73";
+end);
+task.spawn(function()
+    if not isfile"f_12.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_45, Pcall_Result_14 = pcall(function(p1_91, a_91, b_91, c_91)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_12.jpg");
+        end);
+    end;
+    if success_45 then 
+        if Pcall_Result_14 then 
+
+        end;
+    end;
+    if #Pcall_Result_14 > 500 then 
+
+    end;
+    if Pcall_Result_14 then 
+        writefile("f_12.jpg", Pcall_Result_14);
+    end;
+    task.wait();
+    Frame_12 = Instance.new"ImageLabel";
+    Frame_12.Name = "Frame_12";
+    Frame_12.Size = UDim2_New(1, 0, 1, 0);
+    Frame_12.BackgroundTransparency = 1;
+    Frame_12.Image = fenv.getcustomasset"f_12.jpg";
+    Frame_12.ScaleType = Enum.ScaleType.Stretch;
+    Frame_12.ZIndex = 100;
+    Frame_12.Visible = false;
+    Frame_12.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6164383561643836, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 45/73";
+end);
+task.spawn(function()
+    if not isfile"f_13.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_44, Pcall_Result_15 = pcall(function(p1_89, a_89, b_89, c_89)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_13.jpg");
+        end);
+    end;
+    if success_44 then 
+        if Pcall_Result_15 then 
+
+        end;
+    end;
+    if #Pcall_Result_15 > 500 then 
+
+    end;
+    if Pcall_Result_15 then 
+        writefile("f_13.jpg", Pcall_Result_15);
+    end;
+    task.wait();
+    Frame_13 = Instance.new"ImageLabel";
+    Frame_13.Name = "Frame_13";
+    Frame_13.Size = UDim2_New(1, 0, 1, 0);
+    Frame_13.BackgroundTransparency = 1;
+    Frame_13.Image = fenv.getcustomasset"f_13.jpg";
+    Frame_13.ScaleType = Enum.ScaleType.Stretch;
+    Frame_13.ZIndex = 100;
+    Frame_13.Visible = false;
+    Frame_13.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6027397260273972, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 44/73";
+end);
+task.spawn(function()
+    if not isfile"f_14.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_46, Pcall_Result_16 = pcall(function(p1_93, a_93, b_93, c_93)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_14.jpg");
+        end);
+    end;
+    if success_46 then 
+        if Pcall_Result_16 then 
+
+        end;
+    end;
+    if #Pcall_Result_16 > 500 then 
+
+    end;
+    if Pcall_Result_16 then 
+        writefile("f_14.jpg", Pcall_Result_16);
+    end;
+    task.wait();
+    Frame_14 = Instance.new"ImageLabel";
+    Frame_14.Name = "Frame_14";
+    Frame_14.Size = UDim2_New(1, 0, 1, 0);
+    Frame_14.BackgroundTransparency = 1;
+    Frame_14.Image = fenv.getcustomasset"f_14.jpg";
+    Frame_14.ScaleType = Enum.ScaleType.Stretch;
+    Frame_14.ZIndex = 100;
+    Frame_14.Visible = false;
+    Frame_14.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6301369863013698, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 46/73";
+end);
+task.spawn(function()
+    if not isfile"f_15.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_47, Pcall_Result_17 = pcall(function(p1_95, a_95, b_95, c_95)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_15.jpg");
+        end);
+    end;
+    if success_47 then 
+        if Pcall_Result_17 then 
+
+        end;
+    end;
+    if #Pcall_Result_17 > 500 then 
+
+    end;
+    if Pcall_Result_17 then 
+        writefile("f_15.jpg", Pcall_Result_17);
+    end;
+    task.wait();
+    Frame_15 = Instance.new"ImageLabel";
+    Frame_15.Name = "Frame_15";
+    Frame_15.Size = UDim2_New(1, 0, 1, 0);
+    Frame_15.BackgroundTransparency = 1;
+    Frame_15.Image = fenv.getcustomasset"f_15.jpg";
+    Frame_15.ScaleType = Enum.ScaleType.Stretch;
+    Frame_15.ZIndex = 100;
+    Frame_15.Visible = false;
+    Frame_15.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.6438356164383562, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 47/73";
+end);
+task.spawn(function()
+    if not isfile"f_16.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_57, Pcall_Result_18 = pcall(function(p1_115, a_115, b_115, c_115)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_16.jpg");
+        end);
+    end;
+    if success_57 then 
+        if Pcall_Result_18 then 
+
+        end;
+    end;
+    if #Pcall_Result_18 > 500 then 
+
+    end;
+    if Pcall_Result_18 then 
+        writefile("f_16.jpg", Pcall_Result_18);
+    end;
+    task.wait();
+    Frame_16 = Instance.new"ImageLabel";
+    Frame_16.Name = "Frame_16";
+    Frame_16.Size = UDim2_New(1, 0, 1, 0);
+    Frame_16.BackgroundTransparency = 1;
+    Frame_16.Image = fenv.getcustomasset"f_16.jpg";
+    Frame_16.ScaleType = Enum.ScaleType.Stretch;
+    Frame_16.ZIndex = 100;
+    Frame_16.Visible = false;
+    Frame_16.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7808219178082192, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 57/73";
+end);
+task.spawn(function()
+    if not isfile"f_17.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_65, Pcall_Result_19 = pcall(function(p1_131, a_131, b_131, c_131)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_17.jpg");
+        end);
+    end;
+    if success_65 then 
+        if Pcall_Result_19 then 
+
+        end;
+    end;
+    if #Pcall_Result_19 > 500 then 
+
+    end;
+    if Pcall_Result_19 then 
+        writefile("f_17.jpg", Pcall_Result_19);
+    end;
+    task.wait();
+    Frame_17 = Instance.new"ImageLabel";
+    Frame_17.Name = "Frame_17";
+    Frame_17.Size = UDim2_New(1, 0, 1, 0);
+    Frame_17.BackgroundTransparency = 1;
+    Frame_17.Image = fenv.getcustomasset"f_17.jpg";
+    Frame_17.ScaleType = Enum.ScaleType.Stretch;
+    Frame_17.ZIndex = 100;
+    Frame_17.Visible = false;
+    Frame_17.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.8904109589041096, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 65/73";
+end);
+task.spawn(function()
+    if not isfile"f_18.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_58, Pcall_Result_20 = pcall(function(p1_117, a_117, b_117, c_117)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_18.jpg");
+        end);
+    end;
+    if success_58 then 
+        if Pcall_Result_20 then 
+
+        end;
+    end;
+    if #Pcall_Result_20 > 500 then 
+
+    end;
+    if Pcall_Result_20 then 
+        writefile("f_18.jpg", Pcall_Result_20);
+    end;
+    task.wait();
+    Frame_18 = Instance.new"ImageLabel";
+    Frame_18.Name = "Frame_18";
+    Frame_18.Size = UDim2_New(1, 0, 1, 0);
+    Frame_18.BackgroundTransparency = 1;
+    Frame_18.Image = fenv.getcustomasset"f_18.jpg";
+    Frame_18.ScaleType = Enum.ScaleType.Stretch;
+    Frame_18.ZIndex = 100;
+    Frame_18.Visible = false;
+    Frame_18.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7945205479452054, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 58/73";
+end);
+task.spawn(function()
+    if not isfile"f_19.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_69, Pcall_Result_21 = pcall(function(p1_139, a_139, b_139, c_139)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_19.jpg");
+        end);
+    end;
+    if success_69 then 
+        if Pcall_Result_21 then 
+
+        end;
+    end;
+    if #Pcall_Result_21 > 500 then 
+
+    end;
+    if Pcall_Result_21 then 
+        writefile("f_19.jpg", Pcall_Result_21);
+    end;
+    task.wait();
+    Frame_19 = Instance.new"ImageLabel";
+    Frame_19.Name = "Frame_19";
+    Frame_19.Size = UDim2_New(1, 0, 1, 0);
+    Frame_19.BackgroundTransparency = 1;
+    Frame_19.Image = fenv.getcustomasset"f_19.jpg";
+    Frame_19.ScaleType = Enum.ScaleType.Stretch;
+    Frame_19.ZIndex = 100;
+    Frame_19.Visible = false;
+    Frame_19.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9452054794520548, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 69/73";
+end);
+task.spawn(function()
+    if not isfile"f_20.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_68, Pcall_Result_22 = pcall(function(p1_137, a_137, b_137, c_137)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_20.jpg");
+        end);
+    end;
+    if success_68 then 
+        if Pcall_Result_22 then 
+
+        end;
+    end;
+    if #Pcall_Result_22 > 500 then 
+
+    end;
+    if Pcall_Result_22 then 
+        writefile("f_20.jpg", Pcall_Result_22);
+    end;
+    task.wait();
+    Frame_20 = Instance.new"ImageLabel";
+    Frame_20.Name = "Frame_20";
+    Frame_20.Size = UDim2_New(1, 0, 1, 0);
+    Frame_20.BackgroundTransparency = 1;
+    Frame_20.Image = fenv.getcustomasset"f_20.jpg";
+    Frame_20.ScaleType = Enum.ScaleType.Stretch;
+    Frame_20.ZIndex = 100;
+    Frame_20.Visible = false;
+    Frame_20.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9315068493150684, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 68/73";
+end);
+task.spawn(function()
+    if not isfile"f_21.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_71, Pcall_Result_23 = pcall(function(p1_143, a_143, b_143, c_143)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_21.jpg");
+        end);
+    end;
+    if success_71 then 
+        if Pcall_Result_23 then 
+
+        end;
+    end;
+    if #Pcall_Result_23 > 500 then 
+
+    end;
+    if Pcall_Result_23 then 
+        writefile("f_21.jpg", Pcall_Result_23);
+    end;
+    task.wait();
+    Frame_21 = Instance.new"ImageLabel";
+    Frame_21.Name = "Frame_21";
+    Frame_21.Size = UDim2_New(1, 0, 1, 0);
+    Frame_21.BackgroundTransparency = 1;
+    Frame_21.Image = fenv.getcustomasset"f_21.jpg";
+    Frame_21.ScaleType = Enum.ScaleType.Stretch;
+    Frame_21.ZIndex = 100;
+    Frame_21.Visible = false;
+    Frame_21.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9726027397260274, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 71/73";
+end);
+task.spawn(function()
+    if not isfile"f_22.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_73, Pcall_Result_24 = pcall(function(p1_147, a_147, b_147, c_147)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_22.jpg");
+        end);
+    end;
+    if success_73 then 
+        if Pcall_Result_24 then 
+
+        end;
+    end;
+    if #Pcall_Result_24 > 500 then 
+
+    end;
+    if Pcall_Result_24 then 
+        writefile("f_22.jpg", Pcall_Result_24);
+    end;
+    task.wait();
+    Frame_22 = Instance.new"ImageLabel";
+    Frame_22.Name = "Frame_22";
+    Frame_22.Size = UDim2_New(1, 0, 1, 0);
+    Frame_22.BackgroundTransparency = 1;
+    Frame_22.Image = fenv.getcustomasset"f_22.jpg";
+    Frame_22.ScaleType = Enum.ScaleType.Stretch;
+    Frame_22.ZIndex = 100;
+    Frame_22.Visible = false;
+    Frame_22.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(1, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 73/73";
+end);
+task.spawn(function()
+    if not isfile"f_23.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_72, Pcall_Result_25 = pcall(function(p1_145, a_145, b_145, c_145)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_23.jpg");
+        end);
+    end;
+    if success_72 then 
+        if Pcall_Result_25 then 
+
+        end;
+    end;
+    if #Pcall_Result_25 > 500 then 
+
+    end;
+    if Pcall_Result_25 then 
+        writefile("f_23.jpg", Pcall_Result_25);
+    end;
+    task.wait();
+    Frame_23 = Instance.new"ImageLabel";
+    Frame_23.Name = "Frame_23";
+    Frame_23.Size = UDim2_New(1, 0, 1, 0);
+    Frame_23.BackgroundTransparency = 1;
+    Frame_23.Image = fenv.getcustomasset"f_23.jpg";
+    Frame_23.ScaleType = Enum.ScaleType.Stretch;
+    Frame_23.ZIndex = 100;
+    Frame_23.Visible = false;
+    Frame_23.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9863013698630136, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 72/73";
+end);
+task.spawn(function()
+    if not isfile"f_24.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_67, Pcall_Result_26 = pcall(function(p1_135, a_135, b_135, c_135)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_24.jpg");
+        end);
+    end;
+    if success_67 then 
+        if Pcall_Result_26 then 
+
+        end;
+    end;
+    if #Pcall_Result_26 > 500 then 
+
+    end;
+    if Pcall_Result_26 then 
+        writefile("f_24.jpg", Pcall_Result_26);
+    end;
+    task.wait();
+    Frame_24 = Instance.new"ImageLabel";
+    Frame_24.Name = "Frame_24";
+    Frame_24.Size = UDim2_New(1, 0, 1, 0);
+    Frame_24.BackgroundTransparency = 1;
+    Frame_24.Image = fenv.getcustomasset"f_24.jpg";
+    Frame_24.ScaleType = Enum.ScaleType.Stretch;
+    Frame_24.ZIndex = 100;
+    Frame_24.Visible = false;
+    Frame_24.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9178082191780822, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 67/73";
+end);
+task.spawn(function()
+    if not isfile"f_25.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_70, Pcall_Result_27 = pcall(function(p1_141, a_141, b_141, c_141)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_25.jpg");
+        end);
+    end;
+    if success_70 then 
+        if Pcall_Result_27 then 
+
+        end;
+    end;
+    if #Pcall_Result_27 > 500 then 
+
+    end;
+    if Pcall_Result_27 then 
+        writefile("f_25.jpg", Pcall_Result_27);
+    end;
+    task.wait();
+    Frame_25 = Instance.new"ImageLabel";
+    Frame_25.Name = "Frame_25";
+    Frame_25.Size = UDim2_New(1, 0, 1, 0);
+    Frame_25.BackgroundTransparency = 1;
+    Frame_25.Image = fenv.getcustomasset"f_25.jpg";
+    Frame_25.ScaleType = Enum.ScaleType.Stretch;
+    Frame_25.ZIndex = 100;
+    Frame_25.Visible = false;
+    Frame_25.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.958904109589041, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 70/73";
+end);
+task.spawn(function()
+    if not isfile"f_26.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_66, Pcall_Result_28 = pcall(function(p1_133, a_133, b_133, c_133)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_26.jpg");
+        end);
+    end;
+    if success_66 then 
+        if Pcall_Result_28 then 
+
+        end;
+    end;
+    if #Pcall_Result_28 > 500 then 
+
+    end;
+    if Pcall_Result_28 then 
+        writefile("f_26.jpg", Pcall_Result_28);
+    end;
+    task.wait();
+    Frame_26 = Instance.new"ImageLabel";
+    Frame_26.Name = "Frame_26";
+    Frame_26.Size = UDim2_New(1, 0, 1, 0);
+    Frame_26.BackgroundTransparency = 1;
+    Frame_26.Image = fenv.getcustomasset"f_26.jpg";
+    Frame_26.ScaleType = Enum.ScaleType.Stretch;
+    Frame_26.ZIndex = 100;
+    Frame_26.Visible = false;
+    Frame_26.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.9041095890410958, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 66/73";
+end);
+task.spawn(function()
+    if not isfile"f_27.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_61, Pcall_Result_29 = pcall(function(p1_123, a_123, b_123, c_123)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_27.jpg");
+        end);
+    end;
+    if success_61 then 
+        if Pcall_Result_29 then 
+
+        end;
+    end;
+    if #Pcall_Result_29 > 500 then 
+
+    end;
+    if Pcall_Result_29 then 
+        writefile("f_27.jpg", Pcall_Result_29);
+    end;
+    task.wait();
+    Frame_27 = Instance.new"ImageLabel";
+    Frame_27.Name = "Frame_27";
+    Frame_27.Size = UDim2_New(1, 0, 1, 0);
+    Frame_27.BackgroundTransparency = 1;
+    Frame_27.Image = fenv.getcustomasset"f_27.jpg";
+    Frame_27.ScaleType = Enum.ScaleType.Stretch;
+    Frame_27.ZIndex = 100;
+    Frame_27.Visible = false;
+    Frame_27.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.8356164383561644, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 61/73";
+end);
+task.spawn(function()
+    if not isfile"f_28.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_60, Pcall_Result_30 = pcall(function(p1_121, a_121, b_121, c_121)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_28.jpg");
+        end);
+    end;
+    if success_60 then 
+        if Pcall_Result_30 then 
+
+        end;
+    end;
+    if #Pcall_Result_30 > 500 then 
+
+    end;
+    if Pcall_Result_30 then 
+        writefile("f_28.jpg", Pcall_Result_30);
+    end;
+    task.wait();
+    Frame_28 = Instance.new"ImageLabel";
+    Frame_28.Name = "Frame_28";
+    Frame_28.Size = UDim2_New(1, 0, 1, 0);
+    Frame_28.BackgroundTransparency = 1;
+    Frame_28.Image = fenv.getcustomasset"f_28.jpg";
+    Frame_28.ScaleType = Enum.ScaleType.Stretch;
+    Frame_28.ZIndex = 100;
+    Frame_28.Visible = false;
+    Frame_28.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.821917808219178, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 60/73";
+end);
+task.spawn(function()
+    if not isfile"f_29.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_59, Pcall_Result_31 = pcall(function(p1_119, a_119, b_119, c_119)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_29.jpg");
+        end);
+    end;
+    if success_59 then 
+        if Pcall_Result_31 then 
+
+        end;
+    end;
+    if #Pcall_Result_31 > 500 then 
+
+    end;
+    if Pcall_Result_31 then 
+        writefile("f_29.jpg", Pcall_Result_31);
+    end;
+    task.wait();
+    Frame_29 = Instance.new"ImageLabel";
+    Frame_29.Name = "Frame_29";
+    Frame_29.Size = UDim2_New(1, 0, 1, 0);
+    Frame_29.BackgroundTransparency = 1;
+    Frame_29.Image = fenv.getcustomasset"f_29.jpg";
+    Frame_29.ScaleType = Enum.ScaleType.Stretch;
+    Frame_29.ZIndex = 100;
+    Frame_29.Visible = false;
+    Frame_29.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.8082191780821918, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 59/73";
+end);
+task.spawn(function()
+    if not isfile"f_30.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_62, Pcall_Result_32 = pcall(function(p1_125, a_125, b_125, c_125)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_30.jpg");
+        end);
+    end;
+    if success_62 then 
+        if Pcall_Result_32 then 
+
+        end;
+    end;
+    if #Pcall_Result_32 > 500 then 
+
+    end;
+    if Pcall_Result_32 then 
+        writefile("f_30.jpg", Pcall_Result_32);
+    end;
+    task.wait();
+    Frame_30 = Instance.new"ImageLabel";
+    Frame_30.Name = "Frame_30";
+    Frame_30.Size = UDim2_New(1, 0, 1, 0);
+    Frame_30.BackgroundTransparency = 1;
+    Frame_30.Image = fenv.getcustomasset"f_30.jpg";
+    Frame_30.ScaleType = Enum.ScaleType.Stretch;
+    Frame_30.ZIndex = 100;
+    Frame_30.Visible = false;
+    Frame_30.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.8493150684931506, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 62/73";
+end);
+task.spawn(function()
+    if not isfile"f_31.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_64, Pcall_Result_33 = pcall(function(p1_129, a_129, b_129, c_129)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_31.jpg");
+        end);
+    end;
+    if success_64 then 
+        if Pcall_Result_33 then 
+
+        end;
+    end;
+    if #Pcall_Result_33 > 500 then 
+
+    end;
+    if Pcall_Result_33 then 
+        writefile("f_31.jpg", Pcall_Result_33);
+    end;
+    task.wait();
+    Frame_31 = Instance.new"ImageLabel";
+    Frame_31.Name = "Frame_31";
+    Frame_31.Size = UDim2_New(1, 0, 1, 0);
+    Frame_31.BackgroundTransparency = 1;
+    Frame_31.Image = fenv.getcustomasset"f_31.jpg";
+    Frame_31.ScaleType = Enum.ScaleType.Stretch;
+    Frame_31.ZIndex = 100;
+    Frame_31.Visible = false;
+    Frame_31.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.8767123287671232, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 64/73";
+end);
+task.spawn(function()
+    if not isfile"f_32.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_63, Pcall_Result_34 = pcall(function(p1_127, a_127, b_127, c_127)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_32.jpg");
+        end);
+    end;
+    if success_63 then 
+        if Pcall_Result_34 then 
+
+        end;
+    end;
+    if #Pcall_Result_34 > 500 then 
+
+    end;
+    if Pcall_Result_34 then 
+        writefile("f_32.jpg", Pcall_Result_34);
+    end;
+    task.wait();
+    Frame_32 = Instance.new"ImageLabel";
+    Frame_32.Name = "Frame_32";
+    Frame_32.Size = UDim2_New(1, 0, 1, 0);
+    Frame_32.BackgroundTransparency = 1;
+    Frame_32.Image = fenv.getcustomasset"f_32.jpg";
+    Frame_32.ScaleType = Enum.ScaleType.Stretch;
+    Frame_32.ZIndex = 100;
+    Frame_32.Visible = false;
+    Frame_32.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.863013698630137, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 63/73";
+end);
+task.spawn(function()
+    if not isfile"f_33.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_39, Pcall_Result_35 = pcall(function(p1_79, a_79, b_79, c_79)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_33.jpg");
+        end);
+    end;
+    if success_39 then 
+        if Pcall_Result_35 then 
+
+        end;
+    end;
+    if #Pcall_Result_35 > 500 then 
+
+    end;
+    if Pcall_Result_35 then 
+        writefile("f_33.jpg", Pcall_Result_35);
+    end;
+    task.wait();
+    Frame_33 = Instance.new"ImageLabel";
+    Frame_33.Name = "Frame_33";
+    Frame_33.Size = UDim2_New(1, 0, 1, 0);
+    Frame_33.BackgroundTransparency = 1;
+    Frame_33.Image = fenv.getcustomasset"f_33.jpg";
+    Frame_33.ScaleType = Enum.ScaleType.Stretch;
+    Frame_33.ZIndex = 100;
+    Frame_33.Visible = false;
+    Frame_33.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.5342465753424658, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 39/73";
+end);
+task.spawn(function()
+    if not isfile"f_34.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_56, Pcall_Result_36 = pcall(function(p1_113, a_113, b_113, c_113)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_34.jpg");
+        end);
+    end;
+    if success_56 then 
+        if Pcall_Result_36 then 
+
+        end;
+    end;
+    if #Pcall_Result_36 > 500 then 
+
+    end;
+    if Pcall_Result_36 then 
+        writefile("f_34.jpg", Pcall_Result_36);
+    end;
+    task.wait();
+    Frame_34 = Instance.new"ImageLabel";
+    Frame_34.Name = "Frame_34";
+    Frame_34.Size = UDim2_New(1, 0, 1, 0);
+    Frame_34.BackgroundTransparency = 1;
+    Frame_34.Image = fenv.getcustomasset"f_34.jpg";
+    Frame_34.ScaleType = Enum.ScaleType.Stretch;
+    Frame_34.ZIndex = 100;
+    Frame_34.Visible = false;
+    Frame_34.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.7671232876712328, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 56/73";
+end);
+task.spawn(function()
+    if not isfile"f_35.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_38, Pcall_Result_37 = pcall(function(p1_77, a_77, b_77, c_77)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_35.jpg");
+        end);
+    end;
+    if success_38 then 
+        if Pcall_Result_37 then 
+
+        end;
+    end;
+    if #Pcall_Result_37 > 500 then 
+
+    end;
+    if Pcall_Result_37 then 
+        writefile("f_35.jpg", Pcall_Result_37);
+    end;
+    task.wait();
+    Frame_35 = Instance.new"ImageLabel";
+    Frame_35.Name = "Frame_35";
+    Frame_35.Size = UDim2_New(1, 0, 1, 0);
+    Frame_35.BackgroundTransparency = 1;
+    Frame_35.Image = fenv.getcustomasset"f_35.jpg";
+    Frame_35.ScaleType = Enum.ScaleType.Stretch;
+    Frame_35.ZIndex = 100;
+    Frame_35.Visible = false;
+    Frame_35.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.5205479452054794, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 38/73";
+end);
+task.spawn(function()
+    if not isfile"f_36.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_18, Pcall_Result_38 = pcall(function(p1_37, a_37, b_37, c_37)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_36.jpg");
+        end);
+    end;
+    if success_18 then 
+        if Pcall_Result_38 then 
+
+        end;
+    end;
+    if #Pcall_Result_38 > 500 then 
+
+    end;
+    if Pcall_Result_38 then 
+        writefile("f_36.jpg", Pcall_Result_38);
+    end;
+    task.wait();
+    Frame_36 = Instance.new"ImageLabel";
+    Frame_36.Name = "Frame_36";
+    Frame_36.Size = UDim2_New(1, 0, 1, 0);
+    Frame_36.BackgroundTransparency = 1;
+    Frame_36.Image = fenv.getcustomasset"f_36.jpg";
+    Frame_36.ScaleType = Enum.ScaleType.Stretch;
+    Frame_36.ZIndex = 100;
+    Frame_36.Visible = false;
+    Frame_36.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2465753424657534, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 18/73";
+end);
+task.spawn(function()
+    if not isfile"f_37.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_13, Pcall_Result_39 = pcall(function(p1_27, a_27, b_27, c_27)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_37.jpg");
+        end);
+    end;
+    if success_13 then 
+        if Pcall_Result_39 then 
+
+        end;
+    end;
+    if #Pcall_Result_39 > 500 then 
+
+    end;
+    if Pcall_Result_39 then 
+        writefile("f_37.jpg", Pcall_Result_39);
+    end;
+    task.wait();
+    Frame_37 = Instance.new"ImageLabel";
+    Frame_37.Name = "Frame_37";
+    Frame_37.Size = UDim2_New(1, 0, 1, 0);
+    Frame_37.BackgroundTransparency = 1;
+    Frame_37.Image = fenv.getcustomasset"f_37.jpg";
+    Frame_37.ScaleType = Enum.ScaleType.Stretch;
+    Frame_37.ZIndex = 100;
+    Frame_37.Visible = false;
+    Frame_37.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1780821917808219, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 13/73";
+end);
+task.spawn(function()
+    if not isfile"f_38.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_12, Pcall_Result_40 = pcall(function(p1_25, a_25, b_25, c_25)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_38.jpg");
+        end);
+    end;
+    if success_12 then 
+        if Pcall_Result_40 then 
+
+        end;
+    end;
+    if #Pcall_Result_40 > 500 then 
+
+    end;
+    if Pcall_Result_40 then 
+        writefile("f_38.jpg", Pcall_Result_40);
+    end;
+    task.wait();
+    Frame_38 = Instance.new"ImageLabel";
+    Frame_38.Name = "Frame_38";
+    Frame_38.Size = UDim2_New(1, 0, 1, 0);
+    Frame_38.BackgroundTransparency = 1;
+    Frame_38.Image = fenv.getcustomasset"f_38.jpg";
+    Frame_38.ScaleType = Enum.ScaleType.Stretch;
+    Frame_38.ZIndex = 100;
+    Frame_38.Visible = false;
+    Frame_38.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1643835616438356, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 12/73";
+end);
+task.spawn(function()
+    if not isfile"f_39.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_15, Pcall_Result_41 = pcall(function(p1_31, a_31, b_31, c_31)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_39.jpg");
+        end);
+    end;
+    if success_15 then 
+        if Pcall_Result_41 then 
+
+        end;
+    end;
+    if #Pcall_Result_41 > 500 then 
+
+    end;
+    if Pcall_Result_41 then 
+        writefile("f_39.jpg", Pcall_Result_41);
+    end;
+    task.wait();
+    Frame_39 = Instance.new"ImageLabel";
+    Frame_39.Name = "Frame_39";
+    Frame_39.Size = UDim2_New(1, 0, 1, 0);
+    Frame_39.BackgroundTransparency = 1;
+    Frame_39.Image = fenv.getcustomasset"f_39.jpg";
+    Frame_39.ScaleType = Enum.ScaleType.Stretch;
+    Frame_39.ZIndex = 100;
+    Frame_39.Visible = false;
+    Frame_39.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2054794520547945, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 15/73";
+end);
+task.spawn(function()
+    if not isfile"f_40.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_17, Pcall_Result_42 = pcall(function(p1_35, a_35, b_35, c_35)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_40.jpg");
+        end);
+    end;
+    if success_17 then 
+        if Pcall_Result_42 then 
+
+        end;
+    end;
+    if #Pcall_Result_42 > 500 then 
+
+    end;
+    if Pcall_Result_42 then 
+        writefile("f_40.jpg", Pcall_Result_42);
+    end;
+    task.wait();
+    Frame_40 = Instance.new"ImageLabel";
+    Frame_40.Name = "Frame_40";
+    Frame_40.Size = UDim2_New(1, 0, 1, 0);
+    Frame_40.BackgroundTransparency = 1;
+    Frame_40.Image = fenv.getcustomasset"f_40.jpg";
+    Frame_40.ScaleType = Enum.ScaleType.Stretch;
+    Frame_40.ZIndex = 100;
+    Frame_40.Visible = false;
+    Frame_40.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2328767123287671, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 17/73";
+end);
+task.spawn(function()
+    if not isfile"f_41.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_16, Pcall_Result_43 = pcall(function(p1_33, a_33, b_33, c_33)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_41.jpg");
+        end);
+    end;
+    if success_16 then 
+        if Pcall_Result_43 then 
+
+        end;
+    end;
+    if #Pcall_Result_43 > 500 then 
+
+    end;
+    if Pcall_Result_43 then 
+        writefile("f_41.jpg", Pcall_Result_43);
+    end;
+    task.wait();
+    Frame_41 = Instance.new"ImageLabel";
+    Frame_41.Name = "Frame_41";
+    Frame_41.Size = UDim2_New(1, 0, 1, 0);
+    Frame_41.BackgroundTransparency = 1;
+    Frame_41.Image = fenv.getcustomasset"f_41.jpg";
+    Frame_41.ScaleType = Enum.ScaleType.Stretch;
+    Frame_41.ZIndex = 100;
+    Frame_41.Visible = false;
+    Frame_41.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2191780821917808, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 16/73";
+end);
+task.spawn(function()
+    if not isfile"f_42.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_11, Pcall_Result_44 = pcall(function(p1_23, a_23, b_23, c_23)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_42.jpg");
+        end);
+    end;
+    if success_11 then 
+        if Pcall_Result_44 then 
+
+        end;
+    end;
+    if #Pcall_Result_44 > 500 then 
+
+    end;
+    if Pcall_Result_44 then 
+        writefile("f_42.jpg", Pcall_Result_44);
+    end;
+    task.wait();
+    Frame_42 = Instance.new"ImageLabel";
+    Frame_42.Name = "Frame_42";
+    Frame_42.Size = UDim2_New(1, 0, 1, 0);
+    Frame_42.BackgroundTransparency = 1;
+    Frame_42.Image = fenv.getcustomasset"f_42.jpg";
+    Frame_42.ScaleType = Enum.ScaleType.Stretch;
+    Frame_42.ZIndex = 100;
+    Frame_42.Visible = false;
+    Frame_42.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1506849315068493, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 11/73";
+end);
+task.spawn(function()
+    if not isfile"f_43.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_14, Pcall_Result_45 = pcall(function(p1_29, a_29, b_29, c_29)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_43.jpg");
+        end);
+    end;
+    if success_14 then 
+        if Pcall_Result_45 then 
+
+        end;
+    end;
+    if #Pcall_Result_45 > 500 then 
+
+    end;
+    if Pcall_Result_45 then 
+        writefile("f_43.jpg", Pcall_Result_45);
+    end;
+    task.wait();
+    Frame_43 = Instance.new"ImageLabel";
+    Frame_43.Name = "Frame_43";
+    Frame_43.Size = UDim2_New(1, 0, 1, 0);
+    Frame_43.BackgroundTransparency = 1;
+    Frame_43.Image = fenv.getcustomasset"f_43.jpg";
+    Frame_43.ScaleType = Enum.ScaleType.Stretch;
+    Frame_43.ZIndex = 100;
+    Frame_43.Visible = false;
+    Frame_43.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1917808219178082, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 14/73";
+end);
+task.spawn(function()
+    if not isfile"f_44.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_10, Pcall_Result_46 = pcall(function(p1_21, a_21, b_21, c_21)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_44.jpg");
+        end);
+    end;
+    if success_10 then 
+        if Pcall_Result_46 then 
+
+        end;
+    end;
+    if #Pcall_Result_46 > 500 then 
+
+    end;
+    if Pcall_Result_46 then 
+        writefile("f_44.jpg", Pcall_Result_46);
+    end;
+    task.wait();
+    Frame_44 = Instance.new"ImageLabel";
+    Frame_44.Name = "Frame_44";
+    Frame_44.Size = UDim2_New(1, 0, 1, 0);
+    Frame_44.BackgroundTransparency = 1;
+    Frame_44.Image = fenv.getcustomasset"f_44.jpg";
+    Frame_44.ScaleType = Enum.ScaleType.Stretch;
+    Frame_44.ZIndex = 100;
+    Frame_44.Visible = false;
+    Frame_44.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.136986301369863, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 10/73";
+end);
+task.spawn(function()
+    if not isfile"f_45.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_4, Pcall_Result_47 = pcall(function(p1_9, a_9, b_9, c_9)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_45.jpg");
+        end);
+    end;
+    if success_4 then 
+        if Pcall_Result_47 then 
+
+        end;
+    end;
+    if #Pcall_Result_47 > 500 then 
+
+    end;
+    if Pcall_Result_47 then 
+        writefile("f_45.jpg", Pcall_Result_47);
+    end;
+    task.wait();
+    Frame_45 = Instance.new"ImageLabel";
+    Frame_45.Name = "Frame_45";
+    Frame_45.Size = UDim2_New(1, 0, 1, 0);
+    Frame_45.BackgroundTransparency = 1;
+    Frame_45.Image = fenv.getcustomasset"f_45.jpg";
+    Frame_45.ScaleType = Enum.ScaleType.Stretch;
+    Frame_45.ZIndex = 100;
+    Frame_45.Visible = false;
+    Frame_45.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0547945205479452, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 4/73";
+end);
+task.spawn(function()
+    if not isfile"f_46.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_3, Pcall_Result_48 = pcall(function(p1_7, a_7, b_7, c_7)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_46.jpg");
+        end);
+    end;
+    if success_3 then 
+        if Pcall_Result_48 then 
+
+        end;
+    end;
+    if #Pcall_Result_48 > 500 then 
+
+    end;
+    if Pcall_Result_48 then 
+        writefile("f_46.jpg", Pcall_Result_48);
+    end;
+    task.wait();
+    Frame_46 = Instance.new"ImageLabel";
+    Frame_46.Name = "Frame_46";
+    Frame_46.Size = UDim2_New(1, 0, 1, 0);
+    Frame_46.BackgroundTransparency = 1;
+    Frame_46.Image = fenv.getcustomasset"f_46.jpg";
+    Frame_46.ScaleType = Enum.ScaleType.Stretch;
+    Frame_46.ZIndex = 100;
+    Frame_46.Visible = false;
+    Frame_46.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0410958904109589, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 3/73";
+end);
+task.spawn(function()
+    if not isfile"f_47.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_2, Pcall_Result_49 = pcall(function(p1_5, a_5, b_5, c_5)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_47.jpg");
+        end);
+    end;
+    if success_2 then 
+        if Pcall_Result_49 then 
+
+        end;
+    end;
+    if #Pcall_Result_49 > 500 then 
+
+    end;
+    if Pcall_Result_49 then 
+        writefile("f_47.jpg", Pcall_Result_49);
+    end;
+    task.wait();
+    Frame_47 = Instance.new"ImageLabel";
+    Frame_47.Name = "Frame_47";
+    Frame_47.Size = UDim2_New(1, 0, 1, 0);
+    Frame_47.BackgroundTransparency = 1;
+    Frame_47.Image = fenv.getcustomasset"f_47.jpg";
+    Frame_47.ScaleType = Enum.ScaleType.Stretch;
+    Frame_47.ZIndex = 100;
+    Frame_47.Visible = false;
+    Frame_47.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0273972602739726, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 2/73";
+end);
+task.spawn(function()
+    if not isfile"f_48.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_5, Pcall_Result_50 = pcall(function(p1_11, a_11, b_11, c_11)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_48.jpg");
+        end);
+    end;
+    if success_5 then 
+        if Pcall_Result_50 then 
+
+        end;
+    end;
+    if #Pcall_Result_50 > 500 then 
+
+    end;
+    if Pcall_Result_50 then 
+        writefile("f_48.jpg", Pcall_Result_50);
+    end;
+    task.wait();
+    Frame_48 = Instance.new"ImageLabel";
+    Frame_48.Name = "Frame_48";
+    Frame_48.Size = UDim2_New(1, 0, 1, 0);
+    Frame_48.BackgroundTransparency = 1;
+    Frame_48.Image = fenv.getcustomasset"f_48.jpg";
+    Frame_48.ScaleType = Enum.ScaleType.Stretch;
+    Frame_48.ZIndex = 100;
+    Frame_48.Visible = false;
+    Frame_48.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0684931506849315, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 5/73";
+end);
+task.spawn(function()
+    if not isfile"f_49.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_7, Pcall_Result_51 = pcall(function(p1_15, a_15, b_15, c_15)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_49.jpg");
+        end);
+    end;
+    if success_7 then 
+        if Pcall_Result_51 then 
+
+        end;
+    end;
+    if #Pcall_Result_51 > 500 then 
+
+    end;
+    if Pcall_Result_51 then 
+        writefile("f_49.jpg", Pcall_Result_51);
+    end;
+    task.wait();
+    Frame_49 = Instance.new"ImageLabel";
+    Frame_49.Name = "Frame_49";
+    Frame_49.Size = UDim2_New(1, 0, 1, 0);
+    Frame_49.BackgroundTransparency = 1;
+    Frame_49.Image = fenv.getcustomasset"f_49.jpg";
+    Frame_49.ScaleType = Enum.ScaleType.Stretch;
+    Frame_49.ZIndex = 100;
+    Frame_49.Visible = false;
+    Frame_49.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0958904109589041, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 7/73";
+end);
+task.spawn(function()
+    if not isfile"f_50.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_6, Pcall_Result_52 = pcall(function(p1_13, a_13, b_13, c_13)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_50.jpg");
+        end);
+    end;
+    if success_6 then 
+        if Pcall_Result_52 then 
+
+        end;
+    end;
+    if #Pcall_Result_52 > 500 then 
+
+    end;
+    if Pcall_Result_52 then 
+        writefile("f_50.jpg", Pcall_Result_52);
+    end;
+    task.wait();
+    Frame_50 = Instance.new"ImageLabel";
+    Frame_50.Name = "Frame_50";
+    Frame_50.Size = UDim2_New(1, 0, 1, 0);
+    Frame_50.BackgroundTransparency = 1;
+    Frame_50.Image = fenv.getcustomasset"f_50.jpg";
+    Frame_50.ScaleType = Enum.ScaleType.Stretch;
+    Frame_50.ZIndex = 100;
+    Frame_50.Visible = false;
+    Frame_50.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.0821917808219178, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 6/73";
+end);
+task.spawn(function()
+    if not isfile"f_51.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_8, Pcall_Result_53 = pcall(function(p1_17, a_17, b_17, c_17)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_51.jpg");
+        end);
+    end;
+    if success_8 then 
+        if Pcall_Result_53 then 
+
+        end;
+    end;
+    if #Pcall_Result_53 > 500 then 
+
+    end;
+    if Pcall_Result_53 then 
+        writefile("f_51.jpg", Pcall_Result_53);
+    end;
+    task.wait();
+    Frame_51 = Instance.new"ImageLabel";
+    Frame_51.Name = "Frame_51";
+    Frame_51.Size = UDim2_New(1, 0, 1, 0);
+    Frame_51.BackgroundTransparency = 1;
+    Frame_51.Image = fenv.getcustomasset"f_51.jpg";
+    Frame_51.ScaleType = Enum.ScaleType.Stretch;
+    Frame_51.ZIndex = 100;
+    Frame_51.Visible = false;
+    Frame_51.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1095890410958904, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 8/73";
+end);
+task.spawn(function()
+    if not isfile"f_52.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_9, Pcall_Result_54 = pcall(function(p1_19, a_19, b_19, c_19)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_52.jpg");
+        end);
+    end;
+    if success_9 then 
+        if Pcall_Result_54 then 
+
+        end;
+    end;
+    if #Pcall_Result_54 > 500 then 
+
+    end;
+    if Pcall_Result_54 then 
+        writefile("f_52.jpg", Pcall_Result_54);
+    end;
+    task.wait();
+    Frame_52 = Instance.new"ImageLabel";
+    Frame_52.Name = "Frame_52";
+    Frame_52.Size = UDim2_New(1, 0, 1, 0);
+    Frame_52.BackgroundTransparency = 1;
+    Frame_52.Image = fenv.getcustomasset"f_52.jpg";
+    Frame_52.ScaleType = Enum.ScaleType.Stretch;
+    Frame_52.ZIndex = 100;
+    Frame_52.Visible = false;
+    Frame_52.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.1232876712328767, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 9/73";
+end);
+task.spawn(function()
+    if not isfile"f_53.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_19, Pcall_Result_55 = pcall(function(p1_39, a_39, b_39, c_39)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_53.jpg");
+        end);
+    end;
+    if success_19 then 
+        if Pcall_Result_55 then 
+
+        end;
+    end;
+    if #Pcall_Result_55 > 500 then 
+
+    end;
+    if Pcall_Result_55 then 
+        writefile("f_53.jpg", Pcall_Result_55);
+    end;
+    task.wait();
+    Frame_53 = Instance.new"ImageLabel";
+    Frame_53.Name = "Frame_53";
+    Frame_53.Size = UDim2_New(1, 0, 1, 0);
+    Frame_53.BackgroundTransparency = 1;
+    Frame_53.Image = fenv.getcustomasset"f_53.jpg";
+    Frame_53.ScaleType = Enum.ScaleType.Stretch;
+    Frame_53.ZIndex = 100;
+    Frame_53.Visible = false;
+    Frame_53.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2602739726027397, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 19/73";
+end);
+task.spawn(function()
+    if not isfile"f_54.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_28, Pcall_Result_56 = pcall(function(p1_57, a_57, b_57, c_57)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_54.jpg");
+        end);
+    end;
+    if success_28 then 
+        if Pcall_Result_56 then 
+
+        end;
+    end;
+    if #Pcall_Result_56 > 500 then 
+
+    end;
+    if Pcall_Result_56 then 
+        writefile("f_54.jpg", Pcall_Result_56);
+    end;
+    task.wait();
+    Frame_54 = Instance.new"ImageLabel";
+    Frame_54.Name = "Frame_54";
+    Frame_54.Size = UDim2_New(1, 0, 1, 0);
+    Frame_54.BackgroundTransparency = 1;
+    Frame_54.Image = fenv.getcustomasset"f_54.jpg";
+    Frame_54.ScaleType = Enum.ScaleType.Stretch;
+    Frame_54.ZIndex = 100;
+    Frame_54.Visible = false;
+    Frame_54.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3835616438356164, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 28/73";
+end);
+task.spawn(function()
+    if not isfile"f_55.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_20, Pcall_Result_57 = pcall(function(p1_41, a_41, b_41, c_41)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_55.jpg");
+        end);
+    end;
+    if success_20 then 
+        if Pcall_Result_57 then 
+
+        end;
+    end;
+    if #Pcall_Result_57 > 500 then 
+
+    end;
+    if Pcall_Result_57 then 
+        writefile("f_55.jpg", Pcall_Result_57);
+    end;
+    task.wait();
+    Frame_55 = Instance.new"ImageLabel";
+    Frame_55.Name = "Frame_55";
+    Frame_55.Size = UDim2_New(1, 0, 1, 0);
+    Frame_55.BackgroundTransparency = 1;
+    Frame_55.Image = fenv.getcustomasset"f_55.jpg";
+    Frame_55.ScaleType = Enum.ScaleType.Stretch;
+    Frame_55.ZIndex = 100;
+    Frame_55.Visible = false;
+    Frame_55.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.273972602739726, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 20/73";
+end);
+task.spawn(function()
+    if not isfile"f_56.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_32, Pcall_Result_58 = pcall(function(p1_65, a_65, b_65, c_65)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_56.jpg");
+        end);
+    end;
+    if success_32 then 
+        if Pcall_Result_58 then 
+
+        end;
+    end;
+    if #Pcall_Result_58 > 500 then 
+
+    end;
+    if Pcall_Result_58 then 
+        writefile("f_56.jpg", Pcall_Result_58);
+    end;
+    task.wait();
+    Frame_56 = Instance.new"ImageLabel";
+    Frame_56.Name = "Frame_56";
+    Frame_56.Size = UDim2_New(1, 0, 1, 0);
+    Frame_56.BackgroundTransparency = 1;
+    Frame_56.Image = fenv.getcustomasset"f_56.jpg";
+    Frame_56.ScaleType = Enum.ScaleType.Stretch;
+    Frame_56.ZIndex = 100;
+    Frame_56.Visible = false;
+    Frame_56.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4383561643835616, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 32/73";
+end);
+task.spawn(function()
+    if not isfile"f_57.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_31, Pcall_Result_59 = pcall(function(p1_63, a_63, b_63, c_63)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_57.jpg");
+        end);
+    end;
+    if success_31 then 
+        if Pcall_Result_59 then 
+
+        end;
+    end;
+    if #Pcall_Result_59 > 500 then 
+
+    end;
+    if Pcall_Result_59 then 
+        writefile("f_57.jpg", Pcall_Result_59);
+    end;
+    task.wait();
+    Frame_57 = Instance.new"ImageLabel";
+    Frame_57.Name = "Frame_57";
+    Frame_57.Size = UDim2_New(1, 0, 1, 0);
+    Frame_57.BackgroundTransparency = 1;
+    Frame_57.Image = fenv.getcustomasset"f_57.jpg";
+    Frame_57.ScaleType = Enum.ScaleType.Stretch;
+    Frame_57.ZIndex = 100;
+    Frame_57.Visible = false;
+    Frame_57.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4246575342465753, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 31/73";
+end);
+task.spawn(function()
+    if not isfile"f_58.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_34, Pcall_Result_60 = pcall(function(p1_69, a_69, b_69, c_69)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_58.jpg");
+        end);
+    end;
+    if success_34 then 
+        if Pcall_Result_60 then 
+
+        end;
+    end;
+    if #Pcall_Result_60 > 500 then 
+
+    end;
+    if Pcall_Result_60 then 
+        writefile("f_58.jpg", Pcall_Result_60);
+    end;
+    task.wait();
+    Frame_58 = Instance.new"ImageLabel";
+    Frame_58.Name = "Frame_58";
+    Frame_58.Size = UDim2_New(1, 0, 1, 0);
+    Frame_58.BackgroundTransparency = 1;
+    Frame_58.Image = fenv.getcustomasset"f_58.jpg";
+    Frame_58.ScaleType = Enum.ScaleType.Stretch;
+    Frame_58.ZIndex = 100;
+    Frame_58.Visible = false;
+    Frame_58.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4657534246575342, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 34/73";
+end);
+task.spawn(function()
+    if not isfile"f_59.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_36, Pcall_Result_61 = pcall(function(p1_73, a_73, b_73, c_73)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_59.jpg");
+        end);
+    end;
+    if success_36 then 
+        if Pcall_Result_61 then 
+
+        end;
+    end;
+    if #Pcall_Result_61 > 500 then 
+
+    end;
+    if Pcall_Result_61 then 
+        writefile("f_59.jpg", Pcall_Result_61);
+    end;
+    task.wait();
+    Frame_59 = Instance.new"ImageLabel";
+    Frame_59.Name = "Frame_59";
+    Frame_59.Size = UDim2_New(1, 0, 1, 0);
+    Frame_59.BackgroundTransparency = 1;
+    Frame_59.Image = fenv.getcustomasset"f_59.jpg";
+    Frame_59.ScaleType = Enum.ScaleType.Stretch;
+    Frame_59.ZIndex = 100;
+    Frame_59.Visible = false;
+    Frame_59.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4931506849315068, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 36/73";
+end);
+task.spawn(function()
+    if not isfile"f_60.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_35, Pcall_Result_62 = pcall(function(p1_71, a_71, b_71, c_71)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_60.jpg");
+        end);
+    end;
+    if success_35 then 
+        if Pcall_Result_62 then 
+
+        end;
+    end;
+    if #Pcall_Result_62 > 500 then 
+
+    end;
+    if Pcall_Result_62 then 
+        writefile("f_60.jpg", Pcall_Result_62);
+    end;
+    task.wait();
+    Frame_60 = Instance.new"ImageLabel";
+    Frame_60.Name = "Frame_60";
+    Frame_60.Size = UDim2_New(1, 0, 1, 0);
+    Frame_60.BackgroundTransparency = 1;
+    Frame_60.Image = fenv.getcustomasset"f_60.jpg";
+    Frame_60.ScaleType = Enum.ScaleType.Stretch;
+    Frame_60.ZIndex = 100;
+    Frame_60.Visible = false;
+    Frame_60.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4794520547945205, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 35/73";
+end);
+task.spawn(function()
+    if not isfile"f_61.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_30, Pcall_Result_63 = pcall(function(p1_61, a_61, b_61, c_61)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_61.jpg");
+        end);
+    end;
+    if success_30 then 
+        if Pcall_Result_63 then 
+
+        end;
+    end;
+    if #Pcall_Result_63 > 500 then 
+
+    end;
+    if Pcall_Result_63 then 
+        writefile("f_61.jpg", Pcall_Result_63);
+    end;
+    task.wait();
+    Frame_61 = Instance.new"ImageLabel";
+    Frame_61.Name = "Frame_61";
+    Frame_61.Size = UDim2_New(1, 0, 1, 0);
+    Frame_61.BackgroundTransparency = 1;
+    Frame_61.Image = fenv.getcustomasset"f_61.jpg";
+    Frame_61.ScaleType = Enum.ScaleType.Stretch;
+    Frame_61.ZIndex = 100;
+    Frame_61.Visible = false;
+    Frame_61.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.410958904109589, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 30/73";
+end);
+task.spawn(function()
+    if not isfile"f_62.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_33, Pcall_Result_64 = pcall(function(p1_67, a_67, b_67, c_67)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_62.jpg");
+        end);
+    end;
+    if success_33 then 
+        if Pcall_Result_64 then 
+
+        end;
+    end;
+    if #Pcall_Result_64 > 500 then 
+
+    end;
+    if Pcall_Result_64 then 
+        writefile("f_62.jpg", Pcall_Result_64);
+    end;
+    task.wait();
+    Frame_62 = Instance.new"ImageLabel";
+    Frame_62.Name = "Frame_62";
+    Frame_62.Size = UDim2_New(1, 0, 1, 0);
+    Frame_62.BackgroundTransparency = 1;
+    Frame_62.Image = fenv.getcustomasset"f_62.jpg";
+    Frame_62.ScaleType = Enum.ScaleType.Stretch;
+    Frame_62.ZIndex = 100;
+    Frame_62.Visible = false;
+    Frame_62.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.4520547945205479, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 33/73";
+end);
+task.spawn(function()
+    if not isfile"f_63.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_29, Pcall_Result_65 = pcall(function(p1_59, a_59, b_59, c_59)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_63.jpg");
+        end);
+    end;
+    if success_29 then 
+        if Pcall_Result_65 then 
+
+        end;
+    end;
+    if #Pcall_Result_65 > 500 then 
+
+    end;
+    if Pcall_Result_65 then 
+        writefile("f_63.jpg", Pcall_Result_65);
+    end;
+    task.wait();
+    Frame_63 = Instance.new"ImageLabel";
+    Frame_63.Name = "Frame_63";
+    Frame_63.Size = UDim2_New(1, 0, 1, 0);
+    Frame_63.BackgroundTransparency = 1;
+    Frame_63.Image = fenv.getcustomasset"f_63.jpg";
+    Frame_63.ScaleType = Enum.ScaleType.Stretch;
+    Frame_63.ZIndex = 100;
+    Frame_63.Visible = false;
+    Frame_63.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3972602739726027, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 29/73";
+end);
+task.spawn(function()
+    if not isfile"f_64.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_23, Pcall_Result_66 = pcall(function(p1_47, a_47, b_47, c_47)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_64.jpg");
+        end);
+    end;
+    if success_23 then 
+        if Pcall_Result_66 then 
+
+        end;
+    end;
+    if #Pcall_Result_66 > 500 then 
+
+    end;
+    if Pcall_Result_66 then 
+        writefile("f_64.jpg", Pcall_Result_66);
+    end;
+    task.wait();
+    Frame_64 = Instance.new"ImageLabel";
+    Frame_64.Name = "Frame_64";
+    Frame_64.Size = UDim2_New(1, 0, 1, 0);
+    Frame_64.BackgroundTransparency = 1;
+    Frame_64.Image = fenv.getcustomasset"f_64.jpg";
+    Frame_64.ScaleType = Enum.ScaleType.Stretch;
+    Frame_64.ZIndex = 100;
+    Frame_64.Visible = false;
+    Frame_64.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3150684931506849, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 23/73";
+end);
+task.spawn(function()
+    if not isfile"f_65.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_22, Pcall_Result_67 = pcall(function(p1_45, a_45, b_45, c_45)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_65.jpg");
+        end);
+    end;
+    if success_22 then 
+        if Pcall_Result_67 then 
+
+        end;
+    end;
+    if #Pcall_Result_67 > 500 then 
+
+    end;
+    if Pcall_Result_67 then 
+        writefile("f_65.jpg", Pcall_Result_67);
+    end;
+    task.wait();
+    Frame_65 = Instance.new"ImageLabel";
+    Frame_65.Name = "Frame_65";
+    Frame_65.Size = UDim2_New(1, 0, 1, 0);
+    Frame_65.BackgroundTransparency = 1;
+    Frame_65.Image = fenv.getcustomasset"f_65.jpg";
+    Frame_65.ScaleType = Enum.ScaleType.Stretch;
+    Frame_65.ZIndex = 100;
+    Frame_65.Visible = false;
+    Frame_65.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3013698630136986, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 22/73";
+end);
+task.spawn(function()
+    if not isfile"f_66.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_21, Pcall_Result_68 = pcall(function(p1_43, a_43, b_43, c_43)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_66.jpg");
+        end);
+    end;
+    if success_21 then 
+        if Pcall_Result_68 then 
+
+        end;
+    end;
+    if #Pcall_Result_68 > 500 then 
+
+    end;
+    if Pcall_Result_68 then 
+        writefile("f_66.jpg", Pcall_Result_68);
+    end;
+    task.wait();
+    Frame_66 = Instance.new"ImageLabel";
+    Frame_66.Name = "Frame_66";
+    Frame_66.Size = UDim2_New(1, 0, 1, 0);
+    Frame_66.BackgroundTransparency = 1;
+    Frame_66.Image = fenv.getcustomasset"f_66.jpg";
+    Frame_66.ScaleType = Enum.ScaleType.Stretch;
+    Frame_66.ZIndex = 100;
+    Frame_66.Visible = false;
+    Frame_66.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.2876712328767123, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 21/73";
+end);
+task.spawn(function()
+    if not isfile"f_67.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_24, Pcall_Result_69 = pcall(function(p1_49, a_49, b_49, c_49)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_67.jpg");
+        end);
+    end;
+    if success_24 then 
+        if Pcall_Result_69 then 
+
+        end;
+    end;
+    if #Pcall_Result_69 > 500 then 
+
+    end;
+    if Pcall_Result_69 then 
+        writefile("f_67.jpg", Pcall_Result_69);
+    end;
+    task.wait();
+    Frame_67 = Instance.new"ImageLabel";
+    Frame_67.Name = "Frame_67";
+    Frame_67.Size = UDim2_New(1, 0, 1, 0);
+    Frame_67.BackgroundTransparency = 1;
+    Frame_67.Image = fenv.getcustomasset"f_67.jpg";
+    Frame_67.ScaleType = Enum.ScaleType.Stretch;
+    Frame_67.ZIndex = 100;
+    Frame_67.Visible = false;
+    Frame_67.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3287671232876712, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 24/73";
+end);
+task.spawn(function()
+    if not isfile"f_68.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_26, Pcall_Result_70 = pcall(function(p1_53, a_53, b_53, c_53)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_68.jpg");
+        end);
+    end;
+    if success_26 then 
+        if Pcall_Result_70 then 
+
+        end;
+    end;
+    if #Pcall_Result_70 > 500 then 
+
+    end;
+    if Pcall_Result_70 then 
+        writefile("f_68.jpg", Pcall_Result_70);
+    end;
+    task.wait();
+    Frame_68 = Instance.new"ImageLabel";
+    Frame_68.Name = "Frame_68";
+    Frame_68.Size = UDim2_New(1, 0, 1, 0);
+    Frame_68.BackgroundTransparency = 1;
+    Frame_68.Image = fenv.getcustomasset"f_68.jpg";
+    Frame_68.ScaleType = Enum.ScaleType.Stretch;
+    Frame_68.ZIndex = 100;
+    Frame_68.Visible = false;
+    Frame_68.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3561643835616438, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 26/73";
+end);
+task.spawn(function()
+    if not isfile"f_69.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_25, Pcall_Result_71 = pcall(function(p1_51, a_51, b_51, c_51)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_69.jpg");
+        end);
+    end;
+    if success_25 then 
+        if Pcall_Result_71 then 
+
+        end;
+    end;
+    if #Pcall_Result_71 > 500 then 
+
+    end;
+    if Pcall_Result_71 then 
+        writefile("f_69.jpg", Pcall_Result_71);
+    end;
+    task.wait();
+    Frame_69 = Instance.new"ImageLabel";
+    Frame_69.Name = "Frame_69";
+    Frame_69.Size = UDim2_New(1, 0, 1, 0);
+    Frame_69.BackgroundTransparency = 1;
+    Frame_69.Image = fenv.getcustomasset"f_69.jpg";
+    Frame_69.ScaleType = Enum.ScaleType.Stretch;
+    Frame_69.ZIndex = 100;
+    Frame_69.Visible = false;
+    Frame_69.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3424657534246575, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 25/73";
+end);
+task.spawn(function()
+    if not isfile"f_70.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_27, Pcall_Result_72 = pcall(function(p1_55, a_55, b_55, c_55)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_70.jpg");
+        end);
+    end;
+    if success_27 then 
+        if Pcall_Result_72 then 
+
+        end;
+    end;
+    if #Pcall_Result_72 > 500 then 
+
+    end;
+    if Pcall_Result_72 then 
+        writefile("f_70.jpg", Pcall_Result_72);
+    end;
+    task.wait();
+    Frame_70 = Instance.new"ImageLabel";
+    Frame_70.Name = "Frame_70";
+    Frame_70.Size = UDim2_New(1, 0, 1, 0);
+    Frame_70.BackgroundTransparency = 1;
+    Frame_70.Image = fenv.getcustomasset"f_70.jpg";
+    Frame_70.ScaleType = Enum.ScaleType.Stretch;
+    Frame_70.ZIndex = 100;
+    Frame_70.Visible = false;
+    Frame_70.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.3698630136986301, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 27/73";
+end);
+task.spawn(function()
+    if not isfile"f_71.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_37, Pcall_Result_73 = pcall(function(p1_75, a_75, b_75, c_75)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_71.jpg");
+        end);
+    end;
+    if success_37 then 
+        if Pcall_Result_73 then 
+
+        end;
+    end;
+    if #Pcall_Result_73 > 500 then 
+
+    end;
+    if Pcall_Result_73 then 
+        writefile("f_71.jpg", Pcall_Result_73);
+    end;
+    task.wait();
+    Frame_71 = Instance.new"ImageLabel";
+    Frame_71.Name = "Frame_71";
+    Frame_71.Size = UDim2_New(1, 0, 1, 0);
+    Frame_71.BackgroundTransparency = 1;
+    Frame_71.Image = fenv.getcustomasset"f_71.jpg";
+    Frame_71.ScaleType = Enum.ScaleType.Stretch;
+    Frame_71.ZIndex = 100;
+    Frame_71.Visible = false;
+    Frame_71.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(0.5068493150684932, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 37/73";
+end);
+task.spawn(function()
+    if not isfile"f_72.jpg" then 
+
+    end;
+    if tick() < (
+        tick() + 20
+    ) then
+    else 
+        success_74, Pcall_Result_74 = pcall(function(p1_149, a_149, b_149, c_149)
+            return game:HttpGet("https://yejwgmsidqljxaovhawd.supabase.co/storage/v1/object/public/media/vid_49vfwb74/frame_72.jpg");
+        end);
+    end;
+    if success_74 then 
+        if Pcall_Result_74 then 
+
+        end;
+    end;
+    if #Pcall_Result_74 > 500 then 
+
+    end;
+    if Pcall_Result_74 then 
+        writefile("f_72.jpg", Pcall_Result_74);
+    end;
+    task.wait();
+    Frame_72 = Instance.new"ImageLabel";
+    Frame_72.Name = "Frame_72";
+    Frame_72.Size = UDim2_New(1, 0, 1, 0);
+    Frame_72.BackgroundTransparency = 1;
+    Frame_72.Image = fenv.getcustomasset"f_72.jpg";
+    Frame_72.ScaleType = Enum.ScaleType.Stretch;
+    Frame_72.ZIndex = 100;
+    Frame_72.Visible = false;
+    Frame_72.Parent = VideoPlayer;
+    Frame_2.Size = UDim2_New(1.0136986301369864, 0, 1, 0);
+    Starlight_Hub_Is_Loading.Text = "Downloading assets 74/73";
+end);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+task.wait(0.2);
+error"too many operations";
